@@ -1,0 +1,202 @@
+body{
+  font: 15px/1.5 Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#151b1e;
+
+}
+
+a:link {
+    color: #99cc00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+a:visited {
+    color: #8c8c8c;
+}
+
+
+a:hover {
+    color: #d2ff4d;
+}
+
+
+a:active {
+    color: blue;
+}
+.ul {
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  width:80%;
+  margin:auto;
+  overflow:hidden;
+
+}
+
+.text_white{
+  color: white;
+}
+.icon{
+  margin-right: 10px;
+}
+
+.title {
+  color: #cc3300;
+}
+.main {
+  background-color: white;
+}
+
+header{
+  background-color: #151b1e;
+  border-bottom: #ff4000 solid 2px;
+}
+
+header img{
+  width: 100%;
+  margin-top: 20px;
+}
+
+header #name{
+  float: left;
+  text-align: center;
+  width:40%;
+}
+
+header .container{
+  background-color: #35424a;
+}
+
+
+header nav {
+  margin-top: 20px;
+  margin-left: 30px;
+  float: left;
+}
+
+
+
+nav img{
+  width:10%;
+  height:10%;
+}
+nav ul{
+  list-style: none;
+  float: left;
+  padding-left: 0;
+}
+nav ul li{
+  margin-top: 10px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+nav .social p{
+  display: inline;
+}
+
+
+section#experience {
+  width:50%;
+  float:left;
+}
+
+
+
+
+
+/*section*/
+
+section#skills{
+  width: 40%;
+  height: auto;
+  float: left;
+  box-sizing:border-box;
+
+}
+section#skills p{
+  line-height: 10%;
+}
+
+
+/* Container for skill bars */
+section .bar_container {
+
+    width: 90%; /* Full width */
+    background-color: #ddd; /* Grey background */
+}
+
+section .skills {
+    text-align: right; /* Right-align text */
+    padding-right: 20px; /* Add some right padding */
+    line-height: 20px; /* Set the line-height to center the text inside the skill bar, and to expand the height of the container */
+    color: white; /* White text color */
+}
+
+section .html {width: 80%; background-color: #e60073;}
+section .css {width: 70%; background-color: #2196F3;}
+section .java {width: 70%; background-color: #4CAF50;}
+section .js {width: 60%; background-color: #f44336;}
+section .matlab {width: 60%; background-color: #808080;}
+
+section#projects {
+  width: 40%;
+  float: left;
+}
+
+section#skills , section#projects  {
+  background-color: white;
+  color: black;
+
+}
+@media(max-width: 1050px){
+  header h1{
+    margin:0;
+  }
+
+  header nav{
+    margin-top:0;
+    padding-top: 0;
+  }
+}
+
+@media(max-width: 768px){
+  .container{
+    width:90%;
+  }
+  header #name {
+    float: none;
+    width:100%;
+    box-sizing: border-box;
+  }
+
+  header nav{
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0 5px;
+    box-sizing: border-box;
+  }
+  nav ul{
+    float: none;
+  }
+
+  section#experience {
+    width:100%;
+    float: none;
+  }
+  section#skills,
+  section#projects {
+    float: none;
+    width: 100%;
+  }
+
+}
