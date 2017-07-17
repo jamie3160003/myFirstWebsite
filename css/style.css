@@ -11,7 +11,7 @@ a:link {
     text-decoration: none;
     font-weight: bold;
 }
- 
+
 
 a:visited {
     color: #8c8c8c;
@@ -161,13 +161,12 @@ header #info {
 }
 section#experience {
   flex:1 1 500px;
-  border: 2px purple solid;
+
 }
 
 
 section#projects {
   flex:1 1 500px;
-  border: 2px purple solid;
 }
 @media(max-width: 1333px){
     #skills{
