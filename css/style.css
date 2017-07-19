@@ -6,25 +6,8 @@ body{
 
 }
 
-a:link {
-    color: #99cc00;
+a{
     text-decoration: none;
-    font-weight: bold;
-}
-
-
-a:visited {
-    color: #8c8c8c;
-}
-
-
-a:hover {
-    color: #d2ff4d;
-}
-
-
-a:active {
-    color: blue;
 }
 
 .container{
@@ -168,6 +151,46 @@ section#experience {
 section#projects {
   flex:1 1 500px;
 }
+
+/*--------link effect---------------------*/
+#projects a,
+#projects a:visited,
+#projects a:hover,
+#projects a:active{
+  -webkit-backface-visibility:hidden;
+          backface-visibility:hidden;
+	position:relative;
+  transition:0.5s color ease;
+	text-decoration:none;
+	color:#006080;
+    font-weight: bold;
+}
+
+#projects a:after {
+  content:"";
+  border-radius: 10px;
+  position:absolute;
+  background-color:#00bfff;
+  bottom:-0.35rem;
+  -webkit-backface-visibility:hidden;
+          backface-visibility:hidden;
+  transition:0.5s color ease;
+  height:0.20rem;
+  width:0;
+  left:0;
+  transition:0.5s all ease;
+}
+
+#projects a:hover{
+	color:#00bfff;
+}
+
+#projects a:hover:after{
+  width:100%;
+}
+
+/* -------------responsive design------------------*/
+
 @media(max-width: 1333px){
     #skills{
         margin-bottom: 20px;
