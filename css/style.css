@@ -156,7 +156,11 @@ section#projects {
 #projects a,
 #projects a:visited,
 #projects a:hover,
-#projects a:active{
+#projects a:active,
+.work a,
+.work a:visited,
+.work a:hover,
+.work a:active{
   -webkit-backface-visibility:hidden;
           backface-visibility:hidden;
 	position:relative;
@@ -166,7 +170,8 @@ section#projects {
     font-weight: bold;
 }
 
-#projects a:after {
+#projects a:after,
+.work a:after {
   content:"";
   border-radius: 10px;
   position:absolute;
@@ -181,11 +186,13 @@ section#projects {
   transition:0.5s all ease;
 }
 
-#projects a:hover{
+#projects a:hover,
+.work a:hover{
 	color:#00bfff;
 }
 
-#projects a:hover:after{
+#projects a:hover:after,
+.work a:hover:after{
   width:100%;
 }
 
